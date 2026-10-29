@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="EX1/EX1.csproj" />
   <Project Path="EX2/EX2.csproj" />
+  <Project Path="EX3/EX3.csproj" Id="bd7880cc-8e27-4eb7-92b2-edd4fd7525f5" />
 </Solution>
