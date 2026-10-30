@@ -1,4 +1,6 @@
-﻿/*EX4 - Monitoramento de Temperatura com Evento Personalizado
+﻿
+
+/*EX4 - Monitoramento de Temperatura com Evento Personalizado
 
 Sistemas embarcados em ambientes industriais monitoram sensores em tempo real. Uma 
 funcionalidade comum é emitir alertas quando a temperatura ultrapassa o limite seguro.
@@ -18,6 +20,13 @@ namespace EX4
 {
     internal class Program
     {
+
+        static void TratarTemperaturaAlta(double temperatura)
+        {
+            Console.WriteLine($"Alerta: Temperatura excedeu o limite seguro! Valor: {temperatura}ºC");
+        }
+
+
         static void Main(string[] args)
         {
             TemperatureSensor sensor = new TemperatureSensor();
@@ -47,12 +56,6 @@ namespace EX4
                     Console.WriteLine("Entrada inválida. Digite um valor numérico válido.");
                 }
             }
-
-            static void TratarTemperaturaAlta(double temperatura)
-            {
-                Console.WriteLine($"Alerta: Temperatura excedeu o limite seguro! Valor: {temperatura}ºC");
-            }
-
         }
     }
 }
