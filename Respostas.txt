@@ -1,0 +1,38 @@
+EX9 - Exploração da Estrutura de Projeto ASP.NET Core
+
+Compreender a estrutura do projeto ASP.NET Core é essencial para manutenção e
+evolução de aplicações.
+
+Tarefas:
+A partir do projeto criado no exercício anterior, responda:
+
+
+1 - Qual a função da pasta Pages?
+
+A pasta Pages é responsável por armazenar as páginas Razor da aplicação.
+Cada arquivo .cshtml combina a interface HTML com as diretivas Razor 
+(@page, @model, etc) e pode ter um arquivo associado .cshtml.cs que é 
+o PageModel, para lidar com a lógica daquela página. As URLS mapeam 
+diretamente a estrutura de arquivos e diretórios dentro de PAGES.
+
+
+2 - O que faz o arquivo Program.cs?
+
+O Program.cs é é configurada e inicializada a aplicação.
+Em geral tem chamadas para registrar serviços (builder.Services.AddRazorPages()), 
+configurar tratamento de requisições (app.UseRouting()), disponibilização 
+páginas (app.MapRazorPages())e inicialização (app.Run())
+É o primeiro a rodar e vai buscar o que está no main.
+
+3 - Onde são configurados os serviços da aplicação?
+
+Os serviços da aplicação são configurados no Program.cs, na seção builder.Services. 
+Por exemplo: builder.Services.AddRazorPages();
+Essa chamada registra os serviços necessários para funcionar o Razor Pages.
+
+4 -	Como é feito o roteamento de URLs?
+
+O roteamento é configurado o Program.cs. A chamada app.MapRazorPages() mapeias as
+páginas .cshtml (neste caso privacy, index e error) baseadas na pasta Pages. Isso
+pode ser personalizado/modificado usando a diretiva @page em cada arquivo .cshtml.
+Exemplo: @page "/privacidade" corresponderá a página /privacidade
