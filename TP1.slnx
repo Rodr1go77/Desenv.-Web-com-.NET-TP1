@@ -10,4 +10,5 @@
   <Project Path="EX6/EX6.csproj" Id="4fea545e-d9e6-49cb-8163-b97b78b86b24" />
   <Project Path="EX7/EX7.csproj" Id="27d487d3-fe0f-4562-8a0b-b71a556fb9a2" />
   <Project Path="EX8/EX8.csproj" Id="968b1799-9455-4fa6-afe6-4d93731861fd" />
+  <Project Path="EXE10/EXE10_ProductCatalog.csproj" />
 </Solution>

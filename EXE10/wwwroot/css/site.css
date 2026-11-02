@@ -1,0 +1,71 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+.product-table {
+  width: min(100%, 720px);
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: #292929;
+  background-color: #f2f2f2;
+  border: 1px solid #b8b8b8;
+}
+
+.product-table caption {
+  padding: 0.75rem;
+  color: #292929;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: left;
+  background-color: #e2e2e2;
+  border: 1px solid #b8b8b8;
+  border-bottom: 0;
+}
+
+.product-table th,
+.product-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #c6c6c6;
+  text-align: left;
+}
+
+.product-table thead {
+  color: #fff;
+  background-color: #555;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background-color: #e5e5e5;
+}
+
+.product-table tbody tr:hover {
+  background-color: #d1d1d1;
+}
